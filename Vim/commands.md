@@ -1,0 +1,5 @@
+# VIM/NVIM
+
+```
+:edit $MYVIMRC
+```

@@ -1,5 +1,24 @@
 # C++
 
+## Function Parameter Passing - std::string
+Passes by const reference -> no copy, read-only
+```
+void open(const std::string& filename)
+```
+Passes a pointer to a const string. Can be useful when dealing with raw pointers or nullable values (nullptr).
+Requires *filename to access data, caller must pass a valid pointer.
+```
+std::string name = "file.txt";
+open(&name);
+
+void open(const std::string* filename)
+```
+Passes by value -> makes a copy of the string. Can be useful if you need to modify locally without affecting the original,
+but less efficient.
+```
+void open(std::string filename)
+```
+
 ## Memory Management: Stack vs Heap
 ### Stack Allocation (automatic)
 - Object is destroyed automatically when it goes out of scope.

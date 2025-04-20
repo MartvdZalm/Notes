@@ -1,4 +1,7 @@
 # C++
+- https://devdocs.io/cpp/
+- https://cplusplus.com/
+
 
 ## Function Parameter Passing - std::string
 Passes by const reference -> no copy, read-only
